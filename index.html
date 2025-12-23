@@ -1,54 +1,162 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Koperasi Makmur Langgeng Dana</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Koperasi Makmur Langgeng Dana</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7fb;
+  color: #333;
+}
+
+/* HEADER / HERO */
+.hero {
+  background: linear-gradient(135deg, #0f4c81, #2a75c5);
+  color: white;
+  padding: 70px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+  top: -200px;
+  right: -200px;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero img {
+  width: 110px;
+  background: white;
+  padding: 10px;
+  border-radius: 14px;
+}
+
+.hero h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 17px;
+  max-width: 500px;
+}
+
+/* NAV */
+nav {
+  background: white;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+nav a {
+  text-decoration: none;
+  color: #0f4c81;
+  font-weight: 500;
+}
+
+/* CONTENT */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  border-top: 5px solid #d4af37;
+}
+
+.card h3 {
+  color: #0f4c81;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #0f2f55;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-  <img src="logo.png" alt="Logo Koperasi">
-  <h1>Koperasi Makmur Langgeng Dana</h1>
-  <p>Solusi Segala Kebutuhan Anda</p>
-</header>
+<section class="hero">
+  <div class="hero-content">
+    <img src="logo.png" alt="Logo Koperasi">
+    <div>
+      <h1>Koperasi Makmur Langgeng Dana</h1>
+      <p>Solusi Segala Kebutuhan Anda<br>
+      Koperasi profesional dan terpercaya bagi masyarakat umum.</p>
+    </div>
+  </div>
+</section>
 
 <nav>
   <a href="#">Beranda</a>
-  <a href="#">Profil Koperasi</a>
+  <a href="#">Profil</a>
   <a href="#">Layanan</a>
-  <a href="#">Berita & Promosi</a>
+  <a href="#">Berita</a>
   <a href="#">Kontak</a>
 </nav>
 
 <div class="container">
+  <div class="cards">
+    <div class="card">
+      <h3>Profil Koperasi</h3>
+      <p>Koperasi Makmur Langgeng Dana berdiri tahun 2025 dan berkomitmen memberikan layanan simpan pinjam yang aman dan profesional.</p>
+    </div>
 
-  <div class="section">
-    <h2>Selamat Datang</h2>
-    <p>
-      Koperasi Makmur Langgeng Dana adalah koperasi yang hadir untuk memberikan
-      layanan simpan pinjam dan pengelolaan keuangan secara aman, transparan,
-      dan profesional bagi masyarakat umum.
-    </p>
+    <div class="card">
+      <h3>Layanan Simpanan</h3>
+      <p>Sarana penyimpanan dana anggota yang dikelola secara transparan dan bertanggung jawab.</p>
+    </div>
+
+    <div class="card">
+      <h3>Layanan Pinjaman</h3>
+      <p>Solusi pembiayaan mudah dan terpercaya untuk mendukung kebutuhan ekonomi masyarakat.</p>
+    </div>
   </div>
-
-  <div class="section">
-    <h2>Profil Singkat</h2>
-    <p>
-      Berdiri sejak tahun 2025, Koperasi Makmur Langgeng Dana berkomitmen
-      menjadi mitra terpercaya dalam meningkatkan kesejahteraan anggota
-      dan masyarakat melalui prinsip koperasi yang sehat dan berkelanjutan.
-    </p>
-  </div>
-
 </div>
 
 <footer>
-  © 2025 Koperasi Makmur Langgeng Dana • All Rights Reserved
+© 2025 Koperasi Makmur Langgeng Dana
 </footer>
 
 </body>
