@@ -157,6 +157,46 @@ footer{
   font-size:14px;
 }
 </style>
+/* ANIMASI HALUS */
+
+/* Transisi umum */
+*{
+  transition: all .3s ease;
+}
+
+/* Card hover */
+.card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 25px 45px rgba(0,0,0,.12);
+}
+
+/* Navigasi hover */
+nav a:hover{
+  color:#1f6fb2;
+}
+
+/* Hero image hover */
+.hero img:hover{
+  transform: scale(1.05);
+}
+
+/* Smooth load effect */
+.hero,
+.container,
+footer{
+  animation: fadeUp .6s ease;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
 
 </head>
 
